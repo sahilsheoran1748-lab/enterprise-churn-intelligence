@@ -1,0 +1,66 @@
+{
+    "project_title": "Enterprise Churn & Revenue Risk Intelligence System",
+    "dataset": "IBM Telco Customer Churn sample dataset",
+    "dataset_rows": 7043,
+    "dataset_columns": 21,
+    "training_rows": 5634,
+    "testing_rows": 1409,
+    "selected_model": "Random Forest",
+    "decision_threshold": 0.38,
+    "selection_reason": "Prioritizes churn recall; threshold chosen using 5-fold stratified cross-validation on training data",
+    "final_test_metrics": {
+        "Accuracy (%)": 74.73385379701917,
+        "Precision (%)": 51.63636363636363,
+        "Recall (%)": 75.93582887700535,
+        "F1-score (%)": 61.471861471861466,
+        "ROC-AUC": 0.8339688444547779
+    },
+    "model_comparison": [
+        {
+            "Model": "Gradient Boosting",
+            "Accuracy (%)": 79.77,
+            "Precision (%)": 65.95,
+            "Recall (%)": 49.2,
+            "F1-score (%)": 56.36,
+            "ROC-AUC": 0.8428
+        },
+        {
+            "Model": "Logistic Regression",
+            "Accuracy (%)": 80.55,
+            "Precision (%)": 65.72,
+            "Recall (%)": 55.88,
+            "F1-score (%)": 60.4,
+            "ROC-AUC": 0.8421
+        },
+        {
+            "Model": "Random Forest",
+            "Accuracy (%)": 77.93,
+            "Precision (%)": 57.63,
+            "Recall (%)": 63.64,
+            "F1-score (%)": 60.48,
+            "ROC-AUC": 0.834
+        }
+    ],
+    "top_5_features": [
+        {
+            "Feature": "numeric__tenure",
+            "Importance": 0.1279220249732012
+        },
+        {
+            "Feature": "numeric__TotalCharges",
+            "Importance": 0.1248146514036109
+        },
+        {
+            "Feature": "numeric__MonthlyCharges",
+            "Importance": 0.0997699140408399
+        },
+        {
+            "Feature": "categorical__Contract_Month-to-month",
+            "Importance": 0.0944421083441677
+        },
+        {
+            "Feature": "categorical__OnlineSecurity_No",
+            "Importance": 0.0478675009814515
+        }
+    ]
+}

@@ -1,0 +1,4 @@
+Model,Training Accuracy (%)
+Logistic Regression,80.56
+Random Forest,93.31
+Gradient Boosting,81.13

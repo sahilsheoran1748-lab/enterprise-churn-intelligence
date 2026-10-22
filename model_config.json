@@ -1,0 +1,6 @@
+{
+    "model": "Random Forest",
+    "decision_threshold": 0.38,
+    "threshold_selection": "Selected using 5-fold stratified cross-validation on the training data to maximize F1-score",
+    "intended_priority": "Higher churn recall"
+}

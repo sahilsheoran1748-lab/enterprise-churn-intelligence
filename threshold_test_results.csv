@@ -1,0 +1,2 @@
+Model,Selected threshold,Test accuracy (%),Test precision (%),Test recall (%),Test F1-score (%)
+Random Forest,0.38,74.73,51.64,75.94,61.47
